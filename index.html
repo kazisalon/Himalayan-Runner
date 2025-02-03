@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nepali Runner</title>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div id="game-container">
+			<div id="loading-screen">Loading...</div>
+			<canvas id="game-canvas"></canvas>
+			<div id="jump-area"></div>
+			<button id="pause-btn" class="ui-button">⏸️</button>
+			<div class="score-display">Score: <span id="score">0</span></div>
+
+			<div id="start-menu" class="menu-screen">
+				<div class="menu-content">
+					<h1>Nepali Runner</h1>
+					<p>Tap to Jump</p>
+					<button id="start-btn">Play</button>
+				</div>
+			</div>
+
+			<div id="pause-menu" class="menu-screen">
+				<div class="menu-content">
+					<h2>Paused</h2>
+					<button id="resume-btn">Resume</button>
+					<button id="restart-btn">Restart</button>
+				</div>
+			</div>
+
+			<div id="game-over" class="menu-screen">
+				<div class="menu-content">
+					<h2>Game Over</h2>
+					<p>Score: <span id="final-score">0</span></p>
+					<p>High Score: <span id="high-score">0</span></p>
+					<button id="retry-btn">Play Again</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/config.js"></script>
+		<script src="js/assets.js"></script>
+		<script src="js/audio.js"></script>
+		<script src="js/player.js"></script>
+		<script src="js/obstacles.js"></script>
+		<script src="js/game.js"></script>
+	</body>
+</html>
